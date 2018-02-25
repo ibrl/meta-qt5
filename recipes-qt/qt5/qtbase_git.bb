@@ -73,7 +73,7 @@ PACKAGECONFIG_RELEASE ?= "release"
 # PACKAGECONFIG_OPENSSL ?= "openssl"
 PACKAGECONFIG_DEFAULT ?= "dbus udev evdev widgets tools libs freetype tests \
     ${@bb.utils.contains('SELECTED_OPTIMIZATION', '-Os', 'optimize-size', '', d)} \
-    renameat2 getentropy \
+    getentropy \
 "
 
 PACKAGECONFIG ?= " \
